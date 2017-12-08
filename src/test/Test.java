@@ -1,5 +1,6 @@
 package test;
 
+import java.sql.ResultSet;
 import java.util.List;
 import java.util.Map;
 
@@ -14,5 +15,6 @@ public class Test {
 		System.out.println(JDBCHelper.query(Map.class, "select count(1) as n from user"));
 		
 		JDBCHelper.other("update user set user.userName = ? where id = ?", "1",2);
+		
 	}
 }
